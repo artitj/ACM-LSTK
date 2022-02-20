@@ -13,8 +13,10 @@ volume measurement algorithm. Notably, the small nodule segmentation algorithm n
 nodule segmentation boundaries, which is particularly important for the precise measurement of small 
 objects (e.g. lung nodules 6 mm in longest diameter).
 
-Prerequisites for compiling ACM-LSTK are the following libraries:
-* ITK version X
-* VTK version Y
+iThis repository continas everything needed to build ACM-LSTK from scratch. The build.sh script contains
+all of the commands needed to configure an Ubuntu Linux machine and build the LungNoduleSegmenter 
+algorithm. If you have not already have installed the necessary ITK, VTK and other libraries (to the required
+library version numbers), you should uncomment the appropriate commands at the end of the build.sh script 
+and run the script.
 
-
+If you have any questions about ACM-LSTK, please send email to info@accumetra.com.
