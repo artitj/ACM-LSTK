@@ -18,7 +18,7 @@
 
 // This needs to come after the other includes to prevent the global definitions
 // of PixelType to be shadowed by other declarations.
-#include "itkLesionSegmentationImageFilterELIC.h"
+#include "itkLesionSegmentationImageFilterACM.h"
 #include "itkLesionSegmentationCommandLineProgressReporter.h"
 #include "LesionSegmentationCLI.h"
 
@@ -142,7 +142,7 @@ int main( int argc, char * argv[] )
 
   typedef itk::ImageFileReader< InputImageType > InputReaderType;
   typedef itk::ImageFileWriter< RealImageType > OutputWriterType;
-  typedef itk::LesionSegmentationImageFilterELIC< InputImageType, RealImageType > SegmentationFilterType;
+  typedef itk::LesionSegmentationImageFilterACM< InputImageType, RealImageType > SegmentationFilterType;
 
 
   // Read the volume
