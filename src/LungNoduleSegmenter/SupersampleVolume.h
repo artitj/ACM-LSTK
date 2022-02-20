@@ -1,3 +1,4 @@
+# Copyright (c) Accumetra, LLC
 #pragma once
 
 #include "itkImage.h"

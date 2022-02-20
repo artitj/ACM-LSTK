@@ -1,3 +1,5 @@
+# Copyright (c) Accumetra, LLC
+
 #include "itkImageFileReader.h"
 #include "itkImageFileWriter.h"
 #include "itkGDCMImageIO.h"
