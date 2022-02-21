@@ -20,7 +20,15 @@ library version numbers), you should uncomment the appropriate commands at the e
 and run the script.
 
 You can also find one example open source CT lung dataset (data/E00140) containing two lung nodules visible 
-on one slice, one of which is attached to the lung wall. The file "example_run_commands" shows the arguments 
-used to obtain the images and polygonal surface (*.vtp) in the data/E00140_output directory. 
+on one slice, one of which is attached to the lung wall:
+
+![E00140 seedpoints](https://user-images.githubusercontent.com/5749559/154883728-0aa1ca28-3213-43bf-a7e0-e8bc3aee5ed9.png)
+
+The file "example_run_commands" shows the arguments used to obtain the images and polygonal surface (*.vtp)
+in the data/E00140_output directory:
+
+![result_image_2](https://user-images.githubusercontent.com/5749559/154883797-66209d70-e84c-466a-9060-27ffd0d68d8c.jpg)
+![result_image_2](https://user-images.githubusercontent.com/5749559/154883830-cf9d0413-3fb1-449d-96c6-ebb2fb00afb2.jpg)
 
 If you have any questions about ACM-LSTK, please send email to info@accumetra.com.
+
