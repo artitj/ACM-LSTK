@@ -16,7 +16,7 @@ function configureInitialPrerequisites() {
   #
   # Install development libraries and build tools
   #
-  apt-get -y install g++ build-essential cmake-curses-gui python3-minimal python2-minimal
+  apt-get -y install g++ build-essential cmake-curses-gui python-minimal
 
   #
   # Install cmake
