@@ -76,7 +76,7 @@ configureAndBuildVtk() {
   -DVTK_USE_X=OFF \
   -DVTK_USE_GL2PS:BOOL=ON \
   -DOSMESA_INCLUDE_DIR=$DEV_DIR/mesa-17.2.8/include \
-  -DOSMESA_LIBRARY=$DEV_DIR/mesa$DEV_DIRium/libOSMesa.so \
+  -DOSMESA_LIBRARY=$DEV_DIR/mesa-17.2.8/lib/libOSMesa.so \
   -DOPENGL_INCLUDE_DIR=$DEV_DIR/mesa-17.2.8/include \
   -DOPENGL_gl_LIBRARY=$DEV_DIR/mesa-17.2.8/lib/libglapi.so \
   -DOPENGL_glu_LIBRARY=$DEV_DIR/glu-9.0.0/.libs/libGLU.so \
