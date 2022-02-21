@@ -32,3 +32,25 @@ in the data/E00140_output directory:
 
 If you have any questions about ACM-LSTK, please send email to info@accumetra.com.
 
+
+# Docker
+
+To create a docker image, run the following in the top-level directory:
+
+    docker build -t <desired image name> .
+
+To run the docker image:
+
+    docker run -ti --name <container name> -v <local_folder>:/host -d <image name>
+
+To attach to the container CLI:
+
+    docker exec -ti <container name> /bin/bash
+
+For example, to build an image named lstk:20220220 and do a test using the sample data:
+
+    docker build -t lstk:20220220 .
+    docker run -ti --name lstk_container -v <local_path>:/host -d lstk:20220220
+    mkdir <local_path>/output
+    chmod 777 <local_path>/output
+    docker exec -ti lstk_container /home/ubuntu/Dev/ACM-LSTK/src/LungNoduleSegmenter-build/LungNoduleSegmentation --InputDICOMDir "/host/data/E00140/" --Seeds 3 -62 66 -91.5 --MaximumRadius 12.0 --Visualize 1 --Outline 1 --Screenshot /host/output --Supersample 1 --SupersampledIsotropicSpacing 0.2 --WriteFeatureImages 1 --OutputMesh /host/output/E00140.N1.vtp
