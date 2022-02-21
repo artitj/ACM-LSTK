@@ -133,7 +133,7 @@ function buildAndInstallMesa() {
   sudo apt-get install -y autoconf autogen automake pkg-config libgtk-3-dev libtool llvm-dev
 
   cd $DEV_DIR
-  wget https://mesa.freedesktop.org/archive/mesa-17.2.8.tar.xz
+  wget https://archive.mesa3d.org//older-versions/17.x/mesa-17.2.8.tar.xz
   tar xf mesa-17.2.8.tar.xz
   cd $DEV_DIR/mesa-17.2.8
   export MESA_INSTALL=$(pwd)
@@ -188,7 +188,7 @@ function finalizeNodeConfiguration() {
 
 
 configureInitialPrerequisites
-buildAndConfigureCmake
+#buildAndConfigureCmake
 installAndConfigureJava
 
 buildAndInstallMesa
