@@ -187,14 +187,14 @@ function finalizeNodeConfiguration() {
 
 
 
-#configureInitialPrerequisites
-#buildAndConfigureCmake
-#installAndConfigureJava
+configureInitialPrerequisites
+buildAndConfigureCmake
+installAndConfigureJava
 
-#buildAndInstallMesa
-#buildAndConfigureGlu
-#configureAndBuildVtk
-#configureAndBuildItk
+buildAndInstallMesa
+buildAndConfigureGlu
+configureAndBuildVtk
+configureAndBuildItk
 
 buildlungNoduleSegmentationAlgo
 
