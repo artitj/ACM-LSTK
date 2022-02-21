@@ -9,7 +9,7 @@ Brian Helba, Karthik Krishnan, Patrick Reynolds, Matthew McCormick, Wes Turner, 
 Rick Avila.
 
 This new ACM-LSTK version has been improved to include a much higher performance CT small lung nodule 
-volume measurement algorithm. Notably, the small nodule segmentation algorithm now achieves precise sub-voxel 
+volume measurement algorithm. Notably, the small nodule segmentation algorithm now achieves accurate sub-voxel 
 nodule segmentation boundaries, which is particularly important for the precise measurement of small 
 objects (e.g. lung nodules 6 mm in longest diameter).
 
