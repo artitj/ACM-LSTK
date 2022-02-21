@@ -76,7 +76,7 @@ configureAndBuildVtk() {
   -DVTK_USE_X=OFF \
   -DVTK_USE_GL2PS:BOOL=ON \
   -DOSMESA_INCLUDE_DIR=$DEV_DIR/mesa-17.2.8/include \
-  -DOSMESA_LIBRARY=$DEV_DIR/mesa$DEV_DIRium/libOSMesa.so \
+  -DOSMESA_LIBRARY=$DEV_DIR/mesa-17.2.8/lib/gallium/libOSMesa.so \
   -DOPENGL_INCLUDE_DIR=$DEV_DIR/mesa-17.2.8/include \
   -DOPENGL_gl_LIBRARY=$DEV_DIR/mesa-17.2.8/lib/libglapi.so \
   -DOPENGL_glu_LIBRARY=$DEV_DIR/glu-9.0.0/.libs/libGLU.so \
@@ -95,7 +95,8 @@ configureAndBuildVtk() {
 function configureAndBuildItk() {
   # Build ITK
   cd $DEV_DIR
-  git clone git://itk.org/ITK.git
+  #git clone git://itk.org/ITK.git
+  git clone https://github.com/InsightSoftwareConsortium/ITK
   cd $DEV_DIR/ITK
   git checkout v4.13.0
   mkdir $DEV_DIR/ITK-build
@@ -103,9 +104,9 @@ function configureAndBuildItk() {
   cmake ../ITK -DBUILD_TESTING:BOOL=OFF -DModule_ITKVtkGlue:BOOL=ON -DModule_LesionSizingToolkit:BOOL=ON -DVTK_DIR:PATH=$DEV_DIR/VTK-build  && make -j 8
   if [ $? -eq 0 ]
   then
-    echo "Successfully configured and built VTK"
+    echo "Successfully configured and built ITK"
   else
-    echo "Failed to configure & build VTK" >&2
+    echo "Failed to configure & build ITK" >&2
     exit 3
   fi
 }
