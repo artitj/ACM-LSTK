@@ -13,10 +13,14 @@ volume measurement algorithm. Notably, the small nodule segmentation algorithm n
 nodule segmentation boundaries, which is particularly important for the precise measurement of small 
 objects (e.g. lung nodules 6 mm in longest diameter).
 
-This repository continas everything needed to build ACM-LSTK from scratch. The build.sh script contains
+This repository contains everything needed to build ACM-LSTK from scratch. The build.sh script contains
 all of the commands needed to configure an Ubuntu Linux machine and build the LungNoduleSegmenter 
 algorithm. If you have not already have installed the necessary ITK, VTK and other libraries (to the required
 library version numbers), you should uncomment the appropriate commands at the end of the build.sh script 
 and run the script.
+
+You can also find one example open source CT lung dataset (data/E00140) containing two lung nodules visible 
+on one slice, one of which is attached to the lung wall. The file "example_run_commands" shows the arguments 
+used to obtain the images and polygonal surface (*.vtp) in the data/E00140_output directory. 
 
 If you have any questions about ACM-LSTK, please send email to info@accumetra.com.
