@@ -1,4 +1,4 @@
-# Copyright (c) Accumetra, LLC
+// Copyright (c) Accumetra, LLC
 
 #ifndef __LesionSegmentationCLI_h
 #define __LesionSegmentationCLI_h

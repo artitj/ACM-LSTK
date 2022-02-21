@@ -1,4 +1,4 @@
-# Copyright (c) Accumetra, LLC
+// Copyright (c) Accumetra, LLC
 
 #include "itkImageFileReader.h"
 #include "itkImageFileWriter.h"

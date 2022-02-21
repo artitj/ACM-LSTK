@@ -1,4 +1,4 @@
-# Copyright (c) Accumetra, LLC
+// Copyright (c) Accumetra, LLC
 #pragma once
 
 #include "itkImage.h"
