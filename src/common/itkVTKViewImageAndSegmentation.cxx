@@ -147,8 +147,8 @@ namespace itk
 		m_Interactor = vtkSmartPointer< vtkRenderWindowInteractor >::New();
 
 		m_Ren->GetActiveCamera()->ParallelProjectionOn();
-		m_RenWin->SetSize(600, 600);
-		//m_RenWin->SetSize(1024, 1024);
+		//m_RenWin->SetSize(600, 600);
+		m_RenWin->SetSize(2048, 2048);
 
 		m_RenWin->AddRenderer(m_Ren);
 		m_Interactor->SetRenderWindow(m_RenWin);
