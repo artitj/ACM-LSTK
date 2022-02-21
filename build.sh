@@ -188,7 +188,7 @@ function finalizeNodeConfiguration() {
 
 
 configureInitialPrerequisites
-#buildAndConfigureCmake
+buildAndConfigureCmake
 installAndConfigureJava
 
 buildAndInstallMesa
