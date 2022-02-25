@@ -89,7 +89,7 @@ vtkCutPlaneWidget::vtkCutPlaneWidget() : vtkPolyDataSourceWidget()
 	this->SurfaceOutlineActor = vtkActor::New();
 	vtkSmartPointer< vtkProperty > surfaceOutlineProperty
 		= vtkSmartPointer< vtkProperty >::New();
-	surfaceOutlineProperty->SetColor(0.2, 1.0, 0.0);
+	surfaceOutlineProperty->SetColor(1.0, 0.2, 0.0);
 	surfaceOutlineProperty->SetLineWidth(1.5);
 	surfaceOutlineProperty->SetRepresentationToWireframe();
 	surfaceOutlineProperty->SetInterpolationToFlat();
