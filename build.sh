@@ -95,10 +95,6 @@ configureAndBuildVtk() {
 function configureAndBuildItk() {
   # Build ITK
   cd $DEV_DIR
-<<<<<<< HEAD
-=======
-  #git clone git://itk.org/ITK.git
->>>>>>> upstream/main
   git clone https://github.com/InsightSoftwareConsortium/ITK
   cd $DEV_DIR/ITK
   git checkout v4.13.0
